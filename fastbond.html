@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FAST BOND</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+nav {
+    background-color: #003366;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-section {
+    background: url('fevicol-banner.jpg') no-repeat center center/cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+}
+
+.hero-content p {
+    margin: 1rem 0;
+}
+
+.hero-btn {
+    padding: 0.5rem 2rem;
+    background-color: #003366;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.products-section, .about-section, .contact-section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+    width: 200px;
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 0.5rem;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+</style>
+<body>
+    <h1><CENTER> FAST BOND</h1></CENTER></h1>
+    <nav>
+        <div class="logo">
+            <img src="C:\Users\Sarah\Downloads\glue logo.jpg" width="100px" height="100px" alt="FASTBOND Logo">
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1><center><b>WELCOME TO FAST BOND</b></center></h1>
+            <p>The strongest bond for all your adhesive needs.</p>
+            <a href="#products" class="hero-btn">Explore Products</a>
+        </div>
+    </section>
+
+    <section id="products" class="products-section">
+        <h2>Our Products</h2>
+        <div class="product-list">
+            <div class="product-card">
+                <img src="C:\Users\Sarah\Downloads\GLUE 2.jpg" alt="Product 1">
+                <h3>FAST BOND</h3>
+                <p>The most trusted adhesive.</p>
+            </div>
+            <div class="product-card">
+                <img src="C:\Users\Sarah\Downloads\GLUE 1.jpg" alt="Product 2">
+                <h3>FAST BOND</h3>
+                <p>adhesive for your needs.</p>
+            </div>
+            <div class="product-card">
+                <img src="C:\Users\Sarah\Downloads\GLUE3.jpg" alt="product-3">
+                <h3>FAST BOND</h3>
+                <P>adhesive that is made for you</P>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>About Us</h2><br/>
+        <h3> MISSION </h3>
+        <p>At Fastbond, our mission is to provide innovative and reliable adhesive solutions that enhance craftsmanship and promote creativity across industries. We are committed to delivering high-quality products that empower artisans, manufacturers, and everyday creators in India. By embracing sustainable practices and supporting local communities, we aim to strengthen the bond between tradition and innovation.
+        <br/>
+        <h3> VISION</h3>
+        <p> Fastbond envisions becoming the leading adhesive brand in India, celebrated for our dedication to quality, innovation, and cultural heritage. We aspire to create a future where our products not only unite materials but also bring together people and traditions. By integrating modern technology with traditional techniques, we aim to inspire a new generation of creators who honor India's rich legacy while driving forward into a sustainable and prosperous future.
+        </p>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 fast bond. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
